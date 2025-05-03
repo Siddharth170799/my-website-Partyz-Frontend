@@ -293,7 +293,7 @@ const UserDetailsForm = () => {
                   setBookingDoneMessage("Request Pending");
                   setSubmitButton(true)
                   setTimeout(() => {
-                    navigate("/UserBookingsPage");
+                    navigate("/MainDashboardPage");
                   }, 3000);
                 }
               } else {
