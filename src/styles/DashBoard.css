@@ -1,0 +1,204 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #181818; /* Dark background */
+  color: #060404; /* Light text for dark background */
+  transition: background-color 0.3s ease;
+}
+
+/* Dashboard Container */
+/* .dashboard-container {
+  display: flex;
+  flex-direction: row;
+  padding: 30px;
+  background-color: #212121;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: flex-start;
+} */
+.dashboard-container {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  background-color: #212121;
+  min-height: 100vh;
+}
+/* Main Content Area */
+.main-content {
+  flex: 1;
+  background-color: #292929;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.5);
+  overflow-y: auto;
+  min-width: 300px;
+  margin-top: 20px;
+  transition: all 0.3s ease;
+width: 100%;
+    max-width: 1200px;
+  
+}
+
+/* My Bookings Button */
+.my-bookings-button {
+  display: block;
+  margin: 0 auto 20px auto;
+  background-color: #4caf50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.my-bookings-button:hover {
+  background-color: #388e3c;
+}
+
+.my-bookings-button:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px #66ff66;
+}
+
+/* Search Container */
+.search-container {
+  margin-bottom: 25px;
+}
+/* 
+.search-input {
+  width: 100%;
+  padding: 14px 20px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 1px solid #333;
+  background-color: #333;
+  color: #eaeaea;
+  transition: border 0.3s ease, background-color 0.3s ease;
+}
+
+.search-input:focus {
+  border: 1px solid #007bff;
+  background-color: #444;
+  outline: none;
+} */
+.search-container {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.search-input {
+  width: 60%;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  background-color: #5d97d1;
+  color: #212121;
+}
+/* Button Container for Filters */
+.button-container {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin: 20px 0;
+}
+
+.filter-button {
+  background-color: #1976d2;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.filter-button:hover {
+  background-color: #1565c0;
+}
+
+/* Cards Grid */
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 24px;
+  justify-items: center;
+}
+
+/* Card Styling */
+.card {
+  background-color: #333;
+  padding: 20px;
+  border-radius: 12px;
+  width: 280px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.5);
+}
+
+/* Card Title */
+.card-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #eaeaea;
+  margin-bottom: 12px;
+  text-transform: capitalize;
+}
+
+/* Card Content */
+.card-content {
+  font-size: 14px;
+  color: #c1c1c1;
+  margin-bottom: 20px;
+}
+
+/* Card Footer */
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  color: #a3a3a3;
+}
+
+.card-footer span {
+  font-weight: 500;
+}
+
+/* Responsive Design for Mobile View */
+@media (max-width: 768px) {
+  .dashboard-container {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .main-content {
+    margin-top: 20px;
+  }
+
+  .button-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .filter-button {
+    width: 100%;
+    margin-bottom: 12px;
+  }
+
+  .cards-container {
+    gap: 15px;
+    justify-content: center;
+  }
+}

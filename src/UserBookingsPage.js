@@ -1,13 +1,14 @@
 import React, { useContext, useEffect, useState } from "react";
 import axios from "axios";
 import Mycontext from "./context/createContext";
+import { getAllUserBookings, PostUserPhoneNumber } from "./config/useLocalConfig";
 
 const UserBookingsPage = () => {
   const [myBookings, setMyBookings] = useState([]);
   const { userPhoneNumber } = useContext(Mycontext);
 
   const bookingsList = async () => {
-    await axios.post("http://localhost:4000/api/userPhoneNumber", {
+    await axios.post(PostUserPhoneNumber, {
       userPhoneNumber,
     });
   };
@@ -15,7 +16,7 @@ const UserBookingsPage = () => {
   const post = async () => {
     try {
       const details = await axios.get(
-        "http://localhost:4000/api/getAllUserBookings"
+        getAllUserBookings
       );
       const filteredBookings = details?.data?.filter(
         (item) => item.PhoneNumber === userPhoneNumber
@@ -70,13 +71,15 @@ export default UserBookingsPage;
 const styles = {
   container: {
     padding: 20,
-    backgroundColor: "#f5f5f5",
+  //  background-color: #181818; 
+   backgroundColor:"#181818",
     minHeight: "100vh",
   },
   title: {
     fontSize: 24,
     fontWeight: "bold",
     marginBottom: 20,
+    color:"white"
   },
   bookingCard: {
     backgroundColor: "#fff",
@@ -84,6 +87,7 @@ const styles = {
     borderRadius: 8,
     marginBottom: 10,
     boxShadow: "0px 2px 5px rgba(0,0,0,0.3)",
+    color:"black"
   },
   rejectedText: {
     color: "red",

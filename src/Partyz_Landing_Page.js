@@ -1,8 +1,10 @@
 import React, { useState } from "react";
 import {useNavigate} from "react-router-dom"
-import "./Partyz_Landing_Page.css"; // Assuming styles are separated
-import logo from "./Logo.png";
-import backgroundImage from "./AdobeBackgroundImage.jpeg";
+import "./styles/Partyz_Landing_Page.css";
+
+
+import logo from "./logos/Logo.png";
+import backgroundImage from "../src/images/AdobeBackgroundImage.jpeg"
 const PartyzLandingPage = () => {
   const navigate = useNavigate();
   const [hoveredButton, setHoveredButton] = useState("");

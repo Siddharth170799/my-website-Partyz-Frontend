@@ -1,0 +1,154 @@
+/* .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    
+    padding: 20px;
+  }
+  
+  .title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .input-wrapper {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 10px;
+  }
+  
+  .icon {
+    margin-right: 10px;
+    color: #007bff;
+  }
+  
+  .input {
+    border: none;
+    outline: none;
+    flex: 1;
+    font-size: 16px;
+  }
+  
+  .button {
+    background-color: #007bff;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  .button:hover {
+    background-color: #0056b3;
+  }
+  
+  .error {
+    color: red;
+    margin-top: 5px;
+  }
+   */
+
+
+
+   body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background-color: #f7f9fc;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 24px;
+   
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+    max-width: 420px;
+    margin: auto;
+  }
+  
+  .title {
+    font-size: 24px;
+    font-weight: 600;
+    color: #1f2937;
+    margin-bottom: 32px;
+    text-align: center;
+  }
+  
+  .input-wrapper {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    padding: 12px 16px;
+    background-color: #f9fafb;
+    margin-bottom: 12px;
+    transition: border-color 0.3s ease;
+  }
+  
+  .input-wrapper:focus-within {
+    border-color: #3b82f6;
+  }
+  
+  .icon {
+    margin-right: 10px;
+    color: #6b7280;
+    font-size: 16px;
+  }
+  
+  .input-user-login {
+    border: none;
+    outline: none;
+    flex: 1;
+    font-size: 16px;
+    background-color: transparent;
+    color: #080808;
+  }
+  
+  .input::placeholder {
+    color: #9ca3af;
+  }
+  
+  .button {
+    width: 100%;
+    background-color: #3b82f6;
+    padding: 14px;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.2s ease;
+  }
+  
+  .button:hover {
+    background-color: #2563eb;
+  }
+  
+  .error {
+    color: #dc2626;
+    font-size: 14px;
+    margin-top: -6px;
+    margin-bottom: 10px;
+    text-align: left;
+    width: 100%;
+  }
+  

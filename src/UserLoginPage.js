@@ -2,9 +2,7 @@ import React, { useContext, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Mycontext from "./context/createContext";
 import { ValidatePhoneNumber } from "./Validations/userDetailsValidation";
-
-
-import "./userLoginPage.css"; // Make sure this file exists with styles
+import "./styles/userLoginPage.css"; // Make sure this file exists with styles
 
 const UserLoginPage = () => {
   const [phoneNumber, setPhoneNumber] = useState("");
@@ -28,15 +26,16 @@ const UserLoginPage = () => {
 
   return (
     <div className="container">
-      <h2 className="title">Enter Your Phone Number to Proceed</h2>
+      <h2 className="title" style={{color:"white"}}>Enter Your Phone Number to Proceed</h2>
       <div className="input-wrapper">
         <i className="fa fa-phone icon" />
         <input
+        
           type="tel"
           placeholder="Enter your phone number"
           value={phoneNumber}
           onChange={handleInput}
-          className="input"
+          className="input-user-login"
         />
       </div>
       {phoneNumberError && <p className="error">{phoneNumberError}</p>}

@@ -1,4 +1,4 @@
-import "./App.css";
+
 import PartyzLandingPage from "./Partyz_Landing_Page";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import UserLoginPage from "./UserLoginPage";

@@ -1,0 +1,46 @@
+.react-calendar {
+    border: none;
+    font-family: Arial, sans-serif;
+    background-color: #fffbe6; /* Light yellow background */
+  }
+  
+  /* Calendar tiles (individual days) */
+  .react-calendar__tile {
+    background-color: #fffbe6;
+    color: #333;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Hovered day */
+  .react-calendar__tile:hover {
+    background-color: #ffe066; /* Yellow on hover */
+  }
+  
+  /* Selected day */
+  .react-calendar__tile--active {
+    background-color: #ffd700 !important; /* Bright yellow for selected */
+    color: #000 !important;
+  }
+  
+  /* Today's date */
+  .react-calendar__tile--now {
+    background-color: #ffec99;
+    border: 1px solid #f1c40f;
+  }
+
+
+.dot {
+    height: 6px;
+    width: 6px;
+    background-color: red;
+    border-radius: 50%;
+    margin: 0 auto;
+    margin-top: 2px;
+  }
+  .container{
+    margin-top: 5%;
+    /* background-color: #181818; */
+    height: 50%;
+  }
+  
