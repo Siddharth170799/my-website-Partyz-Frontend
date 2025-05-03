@@ -257,6 +257,7 @@ const UserDetailsForm = () => {
   const [emailError, setEmailError] = useState("");
   const [bookingDoneMessage, setBookingDoneMessage] = useState("");
   const [globalErrorMessage, setGlobalErrorMessage] = useState("");
+  const [submitButton,setSubmitButton] = useState(false)
   const navigate = useNavigate();
 
   const postUserDetails = async () => {
@@ -290,6 +291,7 @@ const UserDetailsForm = () => {
 
                   setGlobalErrorMessage("");
                   setBookingDoneMessage("Request Pending");
+                  setSubmitButton(true)
                   setTimeout(() => {
                     navigate("/UserBookingsPage");
                   }, 3000);
@@ -423,7 +425,7 @@ const UserDetailsForm = () => {
         style={styles.input}
       />
 
-      <button style={styles.button} onClick={postUserDetails}>
+      <button style={styles.button} disabled={submitButton} onClick={postUserDetails}>
         Submit
       </button>
 
