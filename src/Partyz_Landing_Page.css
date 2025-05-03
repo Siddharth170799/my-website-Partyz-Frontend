@@ -1,0 +1,38 @@
+.background-image {
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .container {
+    text-align: center;
+  }
+  
+  .image-container {
+    margin-bottom: 30px;
+  }
+  
+  .logo {
+    width: 200px;
+    height: auto;
+  }
+  
+  .button {
+    background-color: transparent;
+    border: 2px solid rgb(9, 4, 4);
+    color: rgb(5, 0, 0);
+    padding: 12px 24px;
+    margin: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .button.hovered {
+    background-color: green;
+  }
+  
