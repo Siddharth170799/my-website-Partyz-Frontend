@@ -1,7 +1,7 @@
 import React from "react";
 import { CircularProgress, Box } from "@mui/material";
 
-const Loader = () => {
+const Loader = ({size = 80 ,color = "black"}) => {
   return (
     <Box
       display="flex"
@@ -9,7 +9,7 @@ const Loader = () => {
       alignItems="center"
       height="20px"
     >
-      <CircularProgress style={{ color: "black" }} />
+      <CircularProgress style={{ color: color}} />
     </Box>
   );
 };

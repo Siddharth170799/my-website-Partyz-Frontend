@@ -9,6 +9,7 @@ import DatePicker from "./DatePicker";
 import UserDetailsForm from "./UserBookingDetailsPage";
 import UserBookingsPage from "./UserBookingsPage";
 import SupervisorDashboardPage from "./SupervisorDashBoard";
+import "./styles/App.css"
 
 function App() {
   const [userPhoneNumber, setUserPhoneNumber] = useState("");
